@@ -24,11 +24,8 @@ We present <b>Cosmos Tokenizer</b>, a suite of image and video tokenizers that a
 | Videos (V)        | Cosmos-CausalCV      | Cosmos-CausalDV      |
 
 
-![Quality-Compression](quality-compression.png)
 
 Given an image or video, Cosmos Tokenizer outputs either continuous latents or discrete tokens. Cosmos Tokenizer achieves spatial compression rates of 8x8 or 16x16 and temporal compression factors of 4x or 8x, resulting in a total compression factor of up to 2048x. <b> Cosmos Tokenizer delivers 8x more total compression than state-of-the-art (SOTA) methods, while simultaneously maintaining higher image quality and running up to 10x faster than the best available SOTA tokenizers.</b>
-
-![Example Image](cosmos-tokenizer.png)
 
 ## Installation
 - Clone the source codes
