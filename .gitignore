@@ -1,0 +1,9 @@
+*.zip
+**/.DS_Store
+credentials
+*.secret
+__pycache__
+pretrained_ckpts/
+reconstructions/
+.vscode/
+.flake8
