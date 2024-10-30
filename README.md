@@ -30,7 +30,7 @@ Given an image or video, Cosmos Tokenizer outputs either continuous latents or d
 ## Installation
 - Clone the source codes
 ```
-git clone ssh://git@gitlab-master.nvidia.com:12051/dir/cosmos-tokenizer.git
+git clone https://github.com/NVIDIA/Cosmos-Tokenizer.git
 cd cosmos-tokenizer
 ```
 - Install dependencies
