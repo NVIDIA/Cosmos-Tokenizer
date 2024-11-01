@@ -14,9 +14,9 @@
 # limitations under the License. -->
 # Cosmos Tokenizer: A suite of image and video neural tokenizers.
 
-### [Website](https://gitlab-master.nvidia.com/dir/cosmos-tokenizer) | Video
+### Website | [Code](github.com/NVIDIA/Cosmos-Tokenizer) | Video
 
-We present <b>Cosmos Tokenizer</b>, a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators. This repo hosts the inference codes and shares pre-trained models for the different tokenizers. Please check out our [demo video](https://drive.google.com/file/d/1l67Z4HggxvoZtqHgPZYIfUusA3DMYE3V/view?usp=drive_link).
+We present **Cosmos Tokenizer**, a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators. This repo hosts the inference codes and shares pre-trained models for the different tokenizers. Please check out our [demo video].
 
 
 |                   | Continuous ( C )    | Discrete ( D )      |
@@ -25,15 +25,11 @@ We present <b>Cosmos Tokenizer</b>, a suite of image and video tokenizers that a
 | Videos (V)        | Cosmos-CausalCV      | Cosmos-CausalDV      |
 
 
-![Quality-Compression](assets/quality-compression.png)
 
 Given an image or video, Cosmos Tokenizer outputs either continuous latents or discrete tokens. Cosmos Tokenizer achieves spatial compression rates of 8x8 or 16x16 and temporal compression factors of 4x or 8x, resulting in a total compression factor of up to 2048x.
-
-![Arch](assets/arch_diagram.jpg)
-
 Cosmos Tokenizer delivers 8x more total compression than state-of-the-art (SOTA) methods, while simultaneously maintaining higher image quality and running up to 10x faster than the best available SOTA tokenizers.
 
-![Example Image](assets/cosmos-tokenizer.png)
+![Arch](assets/arch_diagram.jpg)
 
 ## Installation
 - Clone the source code
