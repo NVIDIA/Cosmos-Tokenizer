@@ -209,6 +209,27 @@ python3 -m cosmos_tokenizer.video_cli \
     --checkpoint_dec pretrained_ckpts/${model_name}/decoder.jit
 ```
 
+## Inference & dataset tokenization with NeMo (JIT/TensorRT)
+TensorRT inference is coming soon, which will be available in [Cosmos Tokenizer README within the NeMo repository](https://github.com/NVIDIA/NeMo/tree/main/nemo/collections/common/video_tokenizers)
+
+### JIT inference
+Please install NeMo from the GitHub `main` branch following the instructions [here](https://github.com/NVIDIA/NeMo?tab=readme-ov-file#pip-from-a-source-branch).
+
+Run the following code to tokenize the video:
+
+```python
+import torch
+from nemo.collections.common.video_tokenizers.cosmos_vision_tokenizer import CausalVideoTokenizer
+model_name = "Cosmos-Tokenizer-CV4x8x8"
+model = CausalVideoTokenizer.from_pretrained(model_name)
+input_tensor = torch.randn(1, 3, 9, 512, 512).to('cuda').to(torch.bfloat16)
+(latent, ) = model.encode(input_tensor)
+```
+
+### dataset tokenization and multimodal model training
+Please see the [Cosmos Tokenizer README within the NeMo repository](https://github.com/NVIDIA/NeMo/tree/main/nemo/collections/common/video_tokenizers) for additional examples to create multimodal training datasets with the Cosmos Tokenizer.
+
+
 ## Evaluation
 Quantitative comparision of our tokenizer and previous tokenizers on DAVIS (Perazzi et al., 2016) dataset. Cosmos Tokenizer achieves state-of-the-art results. Even at higer compression rates (8x8x8 and 8x16x16), Cosmos Tokenizer outperforms previous methods, demonstrating excellent compression-quality trade-off.
 ![Arch](assets/Davis-results.jpg)
