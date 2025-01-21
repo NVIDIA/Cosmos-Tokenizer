@@ -1,0 +1,3 @@
+[console_scripts]
+cosmos-image = cosmos_tokenizer.image_cli:main
+cosmos-video = cosmos_tokenizer.video_cli:main

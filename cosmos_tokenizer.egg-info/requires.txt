@@ -1,0 +1,6 @@
+loguru>=0.7.0
+mediapy==1.1.6
+einops==0.7.0
+einx==0.1.3
+huggingface-hub>=0.26.2
+ipdb>=0.13.13
